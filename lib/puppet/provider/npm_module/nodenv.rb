@@ -66,7 +66,7 @@ Puppet::Type.type(:npm_module).provide :nodenv do
         "NODENV_ROOT"    => @resource[:nodenv_root],
         "NODENV_VERSION" => @resource[:node_version]
       },
-      :failonfail         => true,
+      :failonfail         => false,
       :uid                => @resource[:user]
     }
   end
